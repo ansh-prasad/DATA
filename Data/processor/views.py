@@ -8,7 +8,6 @@ from .forms import UploadFileForm
 import io
 
 def handle_uploaded_file(file):
-    # No changes needed here for this implementation.
     pass
 
 def process_excel(file):
@@ -171,14 +170,14 @@ def process_excel(file):
 
     df_data_2 = pd.DataFrame(data_2)
 
-    # Save to a new Excel file
+    
     df_combined = pd.concat([df_data_1, df_data_2], ignore_index=True)
 
-    # Load the existing Excel file and add a new sheet
+    
     wb = load_workbook(filename=file)
     
-    # Check if sheet exists, create if it doesn't
-    sheet_name = 'Processed_Data'
+    
+    sheet_name = 'Sheet3'
     if sheet_name not in wb.sheetnames:
         wb.create_sheet(title=sheet_name)
     
@@ -210,7 +209,7 @@ def upload_file(request):
             
             # Prepare response for downloading the processed file
             response = HttpResponse(processed_data, content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
-            response['Content-Disposition'] = 'attachment; filename=processed_data.xlsx'
+            response['Content-Disposition'] = 'attachment; New.xlsx'
             return response
     else:
         form = UploadFileForm()
