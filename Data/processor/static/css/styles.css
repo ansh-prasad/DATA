@@ -88,3 +88,57 @@ h1 {
   margin-bottom: 15px;
 }
 
+
+.excel-columns {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.excel-columns h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.table-container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.excel-columns table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.excel-columns th, .excel-columns td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.excel-columns th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.excel-columns tr:first-child th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.excel-columns tr:first-child th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.excel-columns tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.excel-columns tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}

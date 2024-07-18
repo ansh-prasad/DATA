@@ -18,9 +18,9 @@
           {% csrf_token %}
           <div class="file-upload">
             <div class="file-upload-icon">
-              <img src="{% static 'images/upload.png' %}" alt="File Icon">
+              <img src="{% static 'images/upload.png' %}" alt="File Icon" />
             </div>
-            <p id="fileText">Select Excel File</p>
+            <p id="fileText">Upload Excel File</p>
             <input type="file" id="file" name="file" />
             <label for="file" class="browse-files">Browse files</label>
           </div>
@@ -30,9 +30,36 @@
       {% if processed_data %}
       <div class="processed-data">
         <h2>Processed Data</h2>
-        <a href="{{ processed_data }}" class="btn" download="processed_data.xlsx">Download Processed Data</a>
+        <a
+          href="{{ processed_data }}"
+          class="btn"
+          download="processed_data.xlsx"
+          >Download Processed Data</a
+        >
       </div>
       {% endif %}
+    </div>
+
+    <div class="excel-columns">
+      <h2>Excel Columns</h2>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>P</th>
+            <th>Q</th>
+          </tr>
+          <tr>
+            <td>SEM</td>
+            <td>Course</td>
+            <td>Branch</td>
+            <td>Gender</td>
+            <td>Category</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <script src="{% static 'js/upload.js' %}"></script>
