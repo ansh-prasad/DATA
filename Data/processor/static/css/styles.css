@@ -88,7 +88,6 @@ h1 {
   margin-bottom: 15px;
 }
 
-
 .excel-columns {
   background-color: #f0f0f0;
   padding: 20px;
@@ -141,4 +140,47 @@ h1 {
 
 .excel-columns tr:last-child td:last-child {
   border-bottom-right-radius: 8px;
+}
+
+.dropdown-container {
+  width: 25%;
+  margin-bottom: 20px;
+  padding-left: 38%;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  padding-left: 15%;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.dropdown::-ms-expand {
+  display: none;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-container::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #007bff;
+}
+
+.dropdown option {
+  padding: 10px;
 }
