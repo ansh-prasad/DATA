@@ -24,29 +24,36 @@
             <input type="file" id="file" name="file" />
             <label for="file" class="browse-files">Browse files</label>
           </div>
-           <div class="dropdown-container">
-            <select class="dropdown" name="action">
+          <div class="dropdown-container">
+            <select class="dropdown" name="action" required>
               <option value="" disabled selected>Semester</option>
               <option value="action1">ODD</option>
               <option value="action2">EVEN</option>
-              
             </select>
           </div>
-          
+
           <button type="submit" class="btn">Process File</button>
-          
-         
         </form>
       </div>
 
       {% if processed_data %}
       <div class="processed-data">
         <h2>Processed Data</h2>
-        <a href="{{ processed_data }}" class="btn" download="processed_data.xlsx">Download Processed Data</a>
+        <a
+          href="{{ processed_data }}"
+          class="btn"
+          download="processed_data.xlsx"
+          >Download Processed Data</a
+        >
       </div>
       {% endif %}
-      
     </div>
+
+    {% if error_message %}
+    <div class="error-message">
+      <p>{{ error_message }}</p>
+    </div>
+    {% endif %}
 
     <div class="excel-columns">
       <h2>Excel Columns</h2>
