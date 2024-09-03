@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Upload Excel File</h1>
+      <h1>Upload Excel File (.xlsx)</h1>
       <div class="form-container">
         <form method="post" enctype="multipart/form-data">
           {% csrf_token %}
@@ -23,13 +23,6 @@
             <p id="fileText">No File</p>
             <input type="file" id="file" name="file" />
             <label for="file" class="browse-files">Browse files</label>
-          </div>
-          <div class="dropdown-container">
-            <select class="dropdown" name="action" required>
-              <option value="" disabled selected>Semester</option>
-              <option value="action1">ODD</option>
-              <option value="action2">EVEN</option>
-            </select>
           </div>
 
           <button type="submit" class="btn">Process File</button>
