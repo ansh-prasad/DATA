@@ -38,7 +38,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 1) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 1 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 1) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 1) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 1) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 1) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 1) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -112,7 +112,7 @@ def process_excel(file):
         data_1 = {
             'SEM': [1, 1, 1, 1, 1 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,''],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,''],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,''],
@@ -132,7 +132,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 2) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 2 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 2) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 2) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 2) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 2) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 2) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -206,7 +206,7 @@ def process_excel(file):
         data_2 = {
             'SEM': [2, 2, 2, 2, 2 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,''],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,''],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,''],
@@ -225,7 +225,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 3) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 3 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 3) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 3) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 3) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 3) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 3) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -299,7 +299,7 @@ def process_excel(file):
         data_3 = {
             'SEM': [3, 3, 3, 3, 3 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,''],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,''],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,''],
@@ -318,7 +318,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 4) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 4 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 4) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 4) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 4) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 4) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 4) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -392,7 +392,7 @@ def process_excel(file):
         data_4 = {
             'SEM': [4, 4, 4, 4, 4 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,''],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,''],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,''],
@@ -411,7 +411,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 5) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 5 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 5) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 5) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 5) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 5) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 5) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -486,7 +486,7 @@ def process_excel(file):
             data_5 = {
             'SEM': [5, 5, 5, 5, 5 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,''],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,''],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,''],
@@ -520,7 +520,7 @@ def process_excel(file):
             data_5 = {
                 'SEM': [5, 5, 5, 5, 5 ,' ',''],
                 'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-                'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
+                'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
                 'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,GT_Total_NO_m],
                 'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,GT_Total_NO_f],
                 'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,GT_Total_NO_All],
@@ -541,7 +541,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 6) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 6 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 6) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 6) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 6) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 6) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 6) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -616,7 +616,7 @@ def process_excel(file):
             data_6 = {
             'SEM': [6, 6, 6, 6, 6 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,''],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,''],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,''],
@@ -650,7 +650,7 @@ def process_excel(file):
             data_6 = {
                 'SEM': [6, 6, 6, 6, 6 ,' ',''],
                 'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-                'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
+                'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
                 'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,GT_Total_NO_m],
                 'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,GT_Total_NO_f],
                 'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,GT_Total_NO_All],
@@ -669,7 +669,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 7) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 7 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 7) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 7) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 7) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 7) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 7) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -744,7 +744,7 @@ def process_excel(file):
             data_7 = {
             'SEM': [7, 7, 7, 7, 7 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL',''],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,''],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,''],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,''],
@@ -778,7 +778,7 @@ def process_excel(file):
             data_7 = {
                 'SEM': [7, 7, 7, 7, 7 ,' ',''],
                 'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-                'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
+                'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
                 'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,GT_Total_NO_m],
                 'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,GT_Total_NO_f],
                 'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,GT_Total_NO_All],
@@ -798,7 +798,7 @@ def process_excel(file):
 
     if ((df['SEM'] == 8) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 8 exists, Processing Data")
-        df_filtered_A = df[(df['SEM'] == 8) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURE ENGINEERING')]
+        df_filtered_A = df[(df['SEM'] == 8) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'AGRICULTURAL ENGINEERING')]
         df_filtered_C = df[(df['SEM'] == 8) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'CIVIL') ]
         df_filtered_E = df[(df['SEM'] == 8) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'ELECTRICAL')]
         df_filtered_F = df[(df['SEM'] == 8) & (df['Course'].isin(['B.Tech', 'B.Tech.'])) & (df['Branch'] == 'FOOTWEAR TECHNOLOGY')]
@@ -890,7 +890,7 @@ def process_excel(file):
         data_8 = {
             'SEM': [8, 8, 8, 8, 8 ,' ',''],
             'Course': ['B.Tech', 'B.Tech', 'B.Tech', 'B.Tech', 'B.Tech',' ',''],
-            'Branch': ['AGRICULTURE ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
+            'Branch': ['AGRICULTURAL ENGINEERING', 'CIVIL', 'ELECTRICAL', 'FOOTWEAR TECHNOLOGY', 'MECHANICAL','TOTAL','GRAND TOTAL'],
             'M': [m_sum_A, m_sum_C, m_sum_E, m_sum_F, m_sum_M,Total_NO_m,GT_Total_NO_m],
             'F': [f_sum_A, f_sum_C, f_sum_E, f_sum_F, f_sum_M,Total_NO_f,GT_Total_NO_f],
             'TOTAL(G)': [total_A, total_C, total_E, total_F, total_M,Total_NO_All,GT_Total_NO_All],
