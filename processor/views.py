@@ -34,7 +34,7 @@ def process_excel(file):
 
     Grand_Total_CA_total_All , Grand_Total_st_total  , Grand_Total_sc_total  ,Grand_Total_bc_total  ,Grand_Total_gn_total  ,Grand_Total_Total_NO_All , Grand_Total_Total_NO_f , Grand_Total_Total_NO_m = 0, 0, 0, 0, 0, 0, 0, 0
 
-    df = pd.read_excel(file, usecols="C:E,P,Q", skiprows=3, names=["SEM", "Course", "Branch", "Gender", "Category"])
+    df = pd.read_excel(file, usecols="C:E,Q,R", skiprows=3, names=["SEM", "Course", "Branch", "Gender", "Category"])
 
     if ((df['SEM'] == 1) & (df['Course'].isin(['B.Tech', 'B.Tech.']))).any():
         print("SEM 1 exists, Processing Data")
@@ -3233,9 +3233,7 @@ def process_excel(file):
             }
         df_data_37 = pd.DataFrame(data_37)
 
-    else:
-        print("SEM 8 does not exist, Skipping Data")
-        df_data_37 = pd.DataFrame()
+    
 
     if ((df['SEM'] == 1) & (df['Course'].isin(['M.Tech PT']))).any():
 
