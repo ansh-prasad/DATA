@@ -3233,7 +3233,9 @@ def process_excel(file):
             }
         df_data_37 = pd.DataFrame(data_37)
 
-    
+    else:
+        print("SEM 8 does not exist, Skipping Data")
+        df_data_37 = pd.DataFrame()
 
     if ((df['SEM'] == 1) & (df['Course'].isin(['M.Tech PT']))).any():
 
