@@ -1624,9 +1624,9 @@ def process_excel(file):
     d1_CA_total_All, d2_CA_total_All, d3_CA_total_All, d4_CA_total_All, d5_CA_total_All, d6_CA_total_All, d7_CA_total_All, d8_CA_total_All , d9_CA_total_All, d10_CA_total_All = 0, 0, 0, 0, 0, 0, 0, 0,0,0
 
 
-    if ((df['SEM'] == 1) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 1) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 1) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 1) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -1696,9 +1696,9 @@ def process_excel(file):
         df_data_15 = pd.DataFrame()
 
 
-    if ((df['SEM'] == 2) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 2) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 2) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 2) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -1771,9 +1771,9 @@ def process_excel(file):
 
 
 
-    if ((df['SEM'] == 3) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 3) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 3) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 3) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -1845,9 +1845,9 @@ def process_excel(file):
 
 
 
-    if ((df['SEM'] == 4) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 4) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 4) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 4) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -1917,9 +1917,9 @@ def process_excel(file):
         df_data_19 = pd.DataFrame()
 
 
-    if ((df['SEM'] == 5) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 5) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 5) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 5) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -1988,9 +1988,9 @@ def process_excel(file):
         print("SEM 8 does not exist, Skipping Data")
         df_data_20 = pd.DataFrame()
 
-    if ((df['SEM'] == 6) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 6) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 6) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 6) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -2060,9 +2060,9 @@ def process_excel(file):
         df_data_21 = pd.DataFrame()
 
 
-    if ((df['SEM'] == 7) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 7) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 7) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 7) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -2112,7 +2112,7 @@ def process_excel(file):
         d7_st_total = st_total
         d7_CA_total_All = CA_total_All
 
-        if (((df['SEM'] == 8) & (df['Course'].isin(['B.Tech PT']))).any() or ((df['SEM'] == 9) & (df['Course'].isin(['B.Tech PT']))).any() or ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech PT']))).any()) :
+        if (((df['SEM'] == 8) & (df['Course'].isin(['B.Tech ( Part Time)']))).any() or ((df['SEM'] == 9) & (df['Course'].isin(['B.Tech ( Part Time)']))).any() or ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech ( Part Time)']))).any()) :
             data_22 = {
                 'SEM': ['','','',7,'','',''],
                 'Course': ['','','','B.Tech P/T',' ','',''],
@@ -2167,9 +2167,9 @@ def process_excel(file):
 
 
 
-    if ((df['SEM'] == 8) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 8) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 8) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 8) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -2219,7 +2219,7 @@ def process_excel(file):
         d8_st_total = st_total
         d8_CA_total_All = CA_total_All
 
-        if (((df['SEM'] == 9) & (df['Course'].isin(['B.Tech PT']))).any() or ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech PT']))).any()) :
+        if (((df['SEM'] == 9) & (df['Course'].isin(['B.Tech ( Part Time)']))).any() or ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech ( Part Time)']))).any()) :
             data_23 = {
                 'SEM': ['','','',8,'','',''],
                 'Course': ['','','','B.Tech P/T',' ','',''],
@@ -2276,9 +2276,9 @@ def process_excel(file):
 
 
 
-    if ((df['SEM'] == 9) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 9) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 9) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 9) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -2328,7 +2328,7 @@ def process_excel(file):
         d9_st_total = st_total
         d9_CA_total_All = CA_total_All
 
-        if ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech PT']))).any():
+        if ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
              data_24 = {
             'SEM': ['','','',9,'','',''],
             'Course': ['','','','B.Tech P/T',' ','',''],
@@ -2381,9 +2381,9 @@ def process_excel(file):
         df_data_24 = pd.DataFrame()
 
 
-    if ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech PT']))).any():
+    if ((df['SEM'] == 10) & (df['Course'].isin(['B.Tech ( Part Time)']))).any():
 
-        df_filtered_E = df[(df['SEM'] == 10) & (df['Course'].isin(['B.Tech PT'])) & (df['Branch'] == 'ELECTRICAL')]
+        df_filtered_E = df[(df['SEM'] == 10) & (df['Course'].isin(['B.Tech ( Part Time)'])) & (df['Branch'] == 'ELECTRICAL')]
 
         m_sum_E = df_filtered_E['Gender'].str.count('M').sum()
 
@@ -2826,7 +2826,7 @@ def process_excel(file):
             Grand_Total_Total_NO_f = GT_Total_NO_f + Grand_Total_Total_NO_f
             Grand_Total_Total_NO_m = GT_Total_NO_m + Grand_Total_Total_NO_m
 
-            data_30 = {
+            data_29 = {
                 'SEM': ['','','',4,'','',''],
                 'Course': ['','','','M.Tech',' ','',''],
                 'Branch': ['','','','ENGINEERING SYSTEMS','TOTAL','GRAND TOTAL',''],
